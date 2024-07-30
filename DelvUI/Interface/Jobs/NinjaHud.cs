@@ -229,7 +229,7 @@ namespace DelvUI.Interface.Jobs
         private void DrawSuitonBar(Vector2 origin, IPlayerCharacter player)
         {
             float suitonDuration = Utils.StatusListForBattleChara(player).FirstOrDefault(
-                o => o.StatusId == 507 && o.RemainingTime > 0
+                o => o.StatusId == 3848 && o.RemainingTime > 0
             )?.RemainingTime ?? 0f;
 
             if (Config.SuitonBar.HideWhenInactive && suitonDuration == 0)
